@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rock Paper Scissor Game</title>
+</head>
+
+<body>
+    <header>
+        <div class="title text-center">
+            <div class="container">
+                <h1>Rock-Paper-Scissors</h1>
+            </div>
+        </div>
+    </header>
+    <div class="gamebox">
+        <div class="scoresBox d-flex justify-content-center text-center" id="scores">
+            <span>
+                <div class="score" id="user-score"></div>
+            </span>
+            <span>
+                <div class="score" id="cpu-score"></div>
+            </span>
+        </div>
+        <section class="container">
+            <div class="result_field">
+                <div class="result_images d-flex justify-content-center text-center">
+                    <span class="user_screen" id="screen">
+                        <img src="media/User_Rock.png" alt="">
+                    </span>
+                    <span class="cpu_screen" id="screen">
+                        <img src="media/CPU_Rock.png" alt="">
+                    </span>
+                </div>
+                <div class="result text-center my-5">
+                    Let's Play!!
+                </div>
+            </div>
+            <div class="option_images d-flex justify-content-center align-middle text-center">
+                <div class="rock_Btn" id="bgBtn">
+                    <span class="rock_image" id="op_img">
+                        <img src="media/User_Rock.png" alt="" />
+                    </span>
+                    <p>Rock</p>
+                </div>
+                <div class="paper_Btn" id="bgBtn">
+                    <span class="paper_image" id="op_img">
+                        <img src="media/User_Paper.png" alt="" />
+                    </span>
+                    <p>Paper</p>
+                </div>
+                <div class="scissor_Btn" id="bgBtn">
+                    <span class="scissor_image" id="op_img">
+                        <img src="media/User_Scissor.png" alt="" />
+                    </span>
+                    <p>Scissors</p>
+                </div>
+              </div>
+        </section>
+    </div>
+</body>
+
+</html>
