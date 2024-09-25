@@ -25,6 +25,10 @@ body {
     margin-bottom: 4%;
 }
 
+.result_box{
+    text-align: -webkit-center;
+}
+
 .result_images {
     column-gap: 7rem;
 
@@ -37,7 +41,7 @@ body {
 
 .score {
     background-color: #eee;
-    box-shadow: rgba(38, 89, 115, 0.42) 0px 12px 20px 2px, rgba(19, 26, 32, 0.08) 0px 20px 75px -35px;
+    /* box-shadow: rgba(38, 89, 115, 0.42) 0px 12px 20px 2px, rgba(19, 26, 32, 0.08) 0px 20px 75px -35px; */
     border-radius: 12px;
     border: 1px solid;
     border-color: rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
@@ -68,6 +72,7 @@ body {
 
 .option_images{
     column-gap: 7em;
+    cursor: pointer;
 }
 
 #op_img {
@@ -84,8 +89,8 @@ body {
 }
 
 .option_images img {
-    width: 85px;
-    height: 65px;
+    width: 110px;
+    height: 75px;
 }
 
 #bgBtn p{
@@ -93,4 +98,24 @@ body {
     color: hsl(345, 100%, 47%);
     font-size: 1.5em;
     font-weight: 600;
+    pointer-events: none;
 }
+
+.container.start .user_screen {
+    transform-origin: left;
+    animation: userShake 0.7s ease infinite;
+  }
+  @keyframes userShake {
+    50% {
+      transform: rotate(10deg);
+    }
+  }
+  .container.start .cpu_screen {
+    transform-origin: right;
+    animation: cpuShake 0.7s ease infinite;
+  }
+  @keyframes cpuShake {
+    50% {
+      transform: rotate(-10deg);
+    }
+  }
