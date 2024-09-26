@@ -25,7 +25,7 @@ body {
     margin-bottom: 4%;
 }
 
-.result_box{
+.result_box {
     text-align: -webkit-center;
 }
 
@@ -34,21 +34,66 @@ body {
 
 }
 
+
+.result_images img {
+    width: 150px;
+}
+
+.result {
+    color: hsl(345deg 100% 47%);
+    font-size: 3em;
+    font-weight: 500;
+}
+
 .scoresBox {
     column-gap: 20em;
     margin-bottom: 1%;
 }
 
-.score {
+/* Score background and Score Number Color */
+/*#region*/
+#user-score {
     background-color: #eee;
     /* box-shadow: rgba(38, 89, 115, 0.42) 0px 12px 20px 2px, rgba(19, 26, 32, 0.08) 0px 20px 75px -35px; */
     border-radius: 12px;
     border: 1px solid;
     border-color: rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
     padding: 2em;
-    width: 50px;
-
+    padding-bottom: 0;
+    padding-top: 0;
+    align-self: center;
+    width: 100px;
+    font-weight: 700;
 }
+
+.user-score {
+    color: hsl(213, 59%, 29%);
+    /*Change this to your desired color */
+    font-size: 2rem;
+}
+
+.cpu-score {
+    color: hsl(345deg 100% 47%);
+    font-size: 2rem;
+    /*Change this to your desired color */
+}
+
+#cpu-score {
+    background-color: #eee;
+    /* box-shadow: rgba(38, 89, 115, 0.42) 0px 12px 20px 2px, rgba(19, 26, 32, 0.08) 0px 20px 75px -35px; */
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
+    padding: 2em;
+    padding-bottom: 0;
+    padding-top: 0;
+    align-self: center;
+    width: 100px;
+    font-weight: 700;
+}
+
+
+/*#endregion*/
 
 #screen {
     padding: 4em;
@@ -60,17 +105,10 @@ body {
     border-color: rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
 }
 
-.result_images img {
-    width: 150px;
-}
 
-.result{
-    color: hsl(345deg 100% 47%);
-    font-size: 3em;
-    font-weight: 500;
-}
-
-.option_images{
+/* Images Button Option */
+/*#region*/
+.option_images {
     column-gap: 7em;
     cursor: pointer;
 }
@@ -84,7 +122,7 @@ body {
     padding: 3em 1em 3em 1em;
 }
 
-#op_img:hover{
+#op_img:hover {
     box-shadow: rgba(240, 0, 60, 0.42) 0px 0px 10px 8px, rgba(19, 26, 32, 0.08) 0px 20px 75px -35px;
 }
 
@@ -93,7 +131,7 @@ body {
     height: 75px;
 }
 
-#bgBtn p{
+#bgBtn p {
     margin-top: 2em;
     color: hsl(345, 100%, 47%);
     font-size: 1.5em;
@@ -101,21 +139,26 @@ body {
     pointer-events: none;
 }
 
-.container.start .user_screen {
+.container.start .user_screen img {
     transform-origin: left;
     animation: userShake 0.7s ease infinite;
-  }
-  @keyframes userShake {
+}
+
+@keyframes userShake {
     50% {
-      transform: rotate(10deg);
+        transform: rotate(10deg);
     }
-  }
-  .container.start .cpu_screen {
+}
+
+.container.start .cpu_screen img {
     transform-origin: right;
     animation: cpuShake 0.7s ease infinite;
-  }
-  @keyframes cpuShake {
+}
+
+@keyframes cpuShake {
     50% {
-      transform: rotate(-10deg);
+        transform: rotate(-10deg);
     }
-  }
+}
+
+/*#endregion*/
