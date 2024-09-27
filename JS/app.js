@@ -45,7 +45,6 @@ function resetGame() {
 function disableButtons() {
     optionImages.forEach((img) => {
         img.classList.add("disabled");
-        img.classList.add("disabled-hover");
         img.style.pointerEvents = "none";
         
     });
@@ -55,7 +54,6 @@ function disableButtons() {
 function enableButtons() {
     optionImages.forEach((img) => {
         img.classList.remove("disabled");
-        img.classList.remove("disabled-hover");
         img.style.pointerEvents = "auto";
     });
 };
