@@ -46,7 +46,7 @@ body {
 }
 
 .scoresBox {
-    column-gap: 20em;
+    column-gap: 18em;
     margin-bottom: 1%;
 }
 
@@ -108,6 +108,7 @@ body {
 
 /* Images Button Option */
 /*#region*/
+
 .option_images {
     column-gap: 7em;
     cursor: pointer;
@@ -123,6 +124,7 @@ body {
 }
 
 #op_img:hover {
+    background-color: hsl(345, 100%, 47%);
     box-shadow: rgba(240, 0, 60, 0.42) 0px 0px 10px 8px, rgba(19, 26, 32, 0.08) 0px 20px 75px -35px;
 }
 
@@ -162,3 +164,17 @@ body {
 }
 
 /*#endregion*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 350px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .title h1 {
+        font-weight: 700;
+        font-size: 3.8em;
+    }
+}
