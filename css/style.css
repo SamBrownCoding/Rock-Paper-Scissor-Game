@@ -105,6 +105,9 @@ body {
     border-color: rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
 }
 
+.disabled-hover {
+    pointer-events: none;
+}
 
 /* Images Button Option */
 /*#region*/
