@@ -47,7 +47,7 @@ body {
 
 .scoresBox {
     column-gap: 18em;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 /* Score background and Score Number Color */
@@ -166,15 +166,186 @@ body {
 /*#endregion*/
 
 
+/* RESPONSIVE WEB DESIGN */
+
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 350px) { 
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+/* #region */
+@media (max-width: 576px) {
+    .title{
+        margin-bottom: 10%;
+    }
+    
     .title h1 {
-        font-weight: 700;
-        font-size: 3.8em;
+        font-size: 1.8em;
+    }
+
+    .result_box {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .result_images {
+        column-gap: 2rem;
+    }
+
+    #screen {
+        padding: 2.2em;
+    }
+
+    .result_images img {
+        width: 90px;
+    }
+
+    .result {
+        font-size: 2em;
+    }
+
+    .scoresBox {
+        column-gap: 7em;
+    }
+
+    #user-score,
+    #cpu-score {
+        padding: .5em;
+        width: 80px;
+    }
+
+    .user-score,
+    .cpu-score {
+        font-size: 1.5rem;
+    }
+
+    .option_images {
+        column-gap: 2em;
+    }
+
+    #op_img {
+        padding: 2em 1em;
+    }
+
+    .option_images img {
+        width: 50px;
+        height: 40px;
+    }
+
+    #bgBtn p {
+        font-size: 1em;
     }
 }
+/* #endregion */
+
+/* Between small and medium devices (576px to 768px) */
+/* #region */
+@media (min-width: 576px) and (max-width: 767px) {
+    .title h1 {
+        font-size: 3.2em;
+    }
+
+    .result_images {
+        column-gap: 3rem;
+    }
+
+    .result_images img {
+        width: 145px;
+    }
+
+    .result {
+        font-size: 2.2em;
+    }
+
+    .scoresBox {
+        column-gap: 12em;
+    }
+
+    #user-score, #cpu-score {
+        padding: .5em;
+        width: 100px;
+    }
+
+    .user-score, .cpu-score {
+        font-size: 1.6rem;
+    }
+
+    #screen {
+        padding: 3em;
+    }
+
+    .option_images {
+        column-gap: 3em;
+    }
+
+    #op_img {
+        padding: 2.2em 1em;
+    }
+
+    .option_images img {
+        width: 80px;
+        height: 55px;
+    }
+
+    #bgBtn p {
+        font-size: 1.2em;
+    }
+}
+/* #endregion */
+
+/* Medium devices (tablets, 768px and up) */
+/* #region */
+@media (min-width: 768px) and (max-width: 992px) {
+    .title h1 {
+        font-size: 4em;
+    }
+
+    .result_box {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .result_images {
+        column-gap: 5rem;
+    }
+
+    .result_images img {
+        width: 120px;
+    }
+
+    .result {
+        font-size: 2.5em;
+    }
+
+    .scoresBox {
+        column-gap: 15em;
+    }
+
+    #user-score,
+    #cpu-score {
+        padding: 0.9em;
+        width: 90px;
+    }
+
+    .user-score,
+    .cpu-score {
+        font-size: 1.75rem;
+    }
+
+    .option_images {
+        column-gap: 4em;
+    }
+
+    #op_img {
+        padding: 2.5em 1em;
+    }
+
+    .option_images img {
+        width: 90px;
+        height: 60px;
+    }
+
+    #bgBtn p {
+        font-size: 1.25em;
+    }
+}
+/* #endregion */
+
+
+
