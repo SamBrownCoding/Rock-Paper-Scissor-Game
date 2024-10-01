@@ -37,11 +37,11 @@ function resetGame() {
     cpuScore = 0;
     userScoreElement.textContent = userScore;
     cpuScoreElement.textContent = cpuScore;
-    result.textContent = "Choose your option!";
+    result.innerHTML = `2 out of 3 again?<br>Choose your option!`;
     enableButtons();
 };
 
-// Function to disable the option images
+//* Function to disable the option images
 function disableButtons() {
     optionImages.forEach((img) => {
         img.classList.add("disabled");
@@ -50,7 +50,7 @@ function disableButtons() {
     });
 };
 
-// Function to enable the option images
+//* Function to enable the option images
 function enableButtons() {
     optionImages.forEach((img) => {
         img.classList.remove("disabled");
